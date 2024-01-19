@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private SceneItemsManager sceneItemsManager;
     [SerializeField]
+    private CraftingManager craftingManager;
+    [SerializeField]
     private MainPlayer player;
 
     [SerializeField]
@@ -23,6 +25,7 @@ public class GameManager : MonoBehaviour
     public Equipment GetEquipment => equipment;
     public UIManager GetUIManager => uiManager;
     public SceneItemsManager GetSceneItemsManager => sceneItemsManager;
+    public CraftingManager GetCraftingManager => craftingManager;
     public MainPlayer GetPlayer => player;
     public string GetPlayerTag => PlayerTag;
 
