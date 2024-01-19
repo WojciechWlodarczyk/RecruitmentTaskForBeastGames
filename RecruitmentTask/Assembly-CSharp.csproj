@@ -59,8 +59,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Managers\InputManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\SceneItemsManager.cs" />
     <Compile Include="Assets\Scripts\Player\MovementComponent.cs" />
+    <Compile Include="Assets\Scripts\Equipment.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
+    <Compile Include="Assets\Scripts\ItemToPickUp.cs" />
     <Compile Include="Assets\Scripts\Player\MainPlayer.cs" />
   </ItemGroup>
   <ItemGroup>

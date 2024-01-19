@@ -8,12 +8,18 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private InputManager inputManager;
     [SerializeField]
+    private Equipment equipment;
+    [SerializeField]
+    private SceneItemsManager sceneItemsManager;
+    [SerializeField]
     private MainPlayer player;
 
     [SerializeField]
     private string PlayerTag;
 
     public InputManager GetInputManager => inputManager;
+    public Equipment GetEquipment => equipment;
+    public SceneItemsManager GetSceneItemsManager => sceneItemsManager;
     public MainPlayer GetPlayer => player;
     public string GetPlayerTag => PlayerTag;
 
