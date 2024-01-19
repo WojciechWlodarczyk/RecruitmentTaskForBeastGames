@@ -58,12 +58,16 @@
     <Analyzer Include="C:\Program Files\Unity 2022.3.7f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\UI\EquipmentMenu.cs" />
     <Compile Include="Assets\Scripts\Managers\InputManager.cs" />
     <Compile Include="Assets\Scripts\Managers\SceneItemsManager.cs" />
     <Compile Include="Assets\Scripts\Player\MovementComponent.cs" />
+    <Compile Include="Assets\Scripts\UI\InGameMenu.cs" />
     <Compile Include="Assets\Scripts\Equipment.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\ItemToPickUp.cs" />
+    <Compile Include="Assets\Scripts\UI\UIManager.cs" />
+    <Compile Include="Assets\Scripts\UI\ItemIcon.cs" />
     <Compile Include="Assets\Scripts\Player\MainPlayer.cs" />
   </ItemGroup>
   <ItemGroup>

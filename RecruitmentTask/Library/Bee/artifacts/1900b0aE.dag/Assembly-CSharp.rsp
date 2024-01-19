@@ -360,6 +360,10 @@
 "Assets/Scripts/Managers/SceneItemsManager.cs"
 "Assets/Scripts/Player/MainPlayer.cs"
 "Assets/Scripts/Player/MovementComponent.cs"
+"Assets/Scripts/UI/EquipmentMenu.cs"
+"Assets/Scripts/UI/InGameMenu.cs"
+"Assets/Scripts/UI/ItemIcon.cs"
+"Assets/Scripts/UI/UIManager.cs"
 -langversion:9.0
 
 /deterministic
