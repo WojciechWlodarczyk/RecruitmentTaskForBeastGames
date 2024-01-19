@@ -17,6 +17,8 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     private EquipmentMenu equipmentMenu;
 
+    [SerializeField]
+    private CraftingMenu craftingMenu;
 
     [SerializeField]
     private Texture2D customCursor;
@@ -30,6 +32,20 @@ public class UIManager : MonoBehaviour
         Cursor.visible = true;
 
         equipmentMenu.Open();
+        craftingMenu.Close();
+
+        currentUIState = UIState.EquipmentUI;
+    }
+    public void OpenCraftingMenu(ItemType forItem)
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
+        equipmentMenu.Close();
+        craftingMenu.SetFirstCraftingItem(forItem);
+        craftingMenu.SetSecondCraftingItem(ItemType.None);
+        craftingMenu.SetCraftingResult(ItemType.None);
+        craftingMenu.Open();
 
         currentUIState = UIState.EquipmentUI;
     }
@@ -40,6 +56,7 @@ public class UIManager : MonoBehaviour
         Cursor.visible = false;
 
         equipmentMenu.Close();
+        craftingMenu.Close();
 
         currentUIState = UIState.DuringGame;
     }

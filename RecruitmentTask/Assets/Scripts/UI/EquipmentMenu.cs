@@ -15,7 +15,10 @@ public class EquipmentMenu : InGameMenu
 
     public void AddItemToCrafting()
     {
+        if (selectedIcon == null)
+            return;
 
+        uiManager.OpenCraftingMenu(selectedIcon.GetItemType);
     }
 
     public void UnpackItem()

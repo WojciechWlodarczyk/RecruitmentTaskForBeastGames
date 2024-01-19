@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\ScriptableObject\CraftingOperation.cs" />
+    <Compile Include="Assets\Scripts\UI\CraftingMenu.cs" />
     <Compile Include="Assets\Scripts\UI\EquipmentMenu.cs" />
     <Compile Include="Assets\Scripts\Managers\InputManager.cs" />
     <Compile Include="Assets\Scripts\Managers\CraftingManager.cs" />
