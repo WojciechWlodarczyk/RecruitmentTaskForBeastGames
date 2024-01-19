@@ -21,6 +21,9 @@ public class UIManager : MonoBehaviour
     private CraftingMenu craftingMenu;
 
     [SerializeField]
+    private CollectPanel collectPanel;
+
+    [SerializeField]
     private Texture2D customCursor;
 
 
@@ -31,6 +34,7 @@ public class UIManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
+        HideCollectPanel();
         equipmentMenu.Open();
         craftingMenu.Close();
 
@@ -41,6 +45,7 @@ public class UIManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
+        HideCollectPanel();
         equipmentMenu.Close();
         craftingMenu.SetFirstCraftingItem(forItem);
         craftingMenu.SetSecondCraftingItem(ItemType.None);
@@ -57,6 +62,7 @@ public class UIManager : MonoBehaviour
 
         equipmentMenu.Close();
         craftingMenu.Close();
+        HideCollectPanel();
 
         currentUIState = UIState.DuringGame;
     }
@@ -66,5 +72,20 @@ public class UIManager : MonoBehaviour
         Cursor.SetCursor(customCursor, Vector2.zero, CursorMode.ForceSoftware);
 
         CloseAllMenus();
+    }
+    public void ShowCollectPanel()
+    {
+        if (currentUIState != UIState.DuringGame)
+            return;
+
+        collectPanel.Show();
+    }
+
+    public void HideCollectPanel()
+    {
+        if (currentUIState != UIState.DuringGame)
+            return;
+
+        collectPanel.Hide();
     }
 }

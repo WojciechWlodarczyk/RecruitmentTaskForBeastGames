@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\UI\EquipmentMenu.cs" />
     <Compile Include="Assets\Scripts\Managers\InputManager.cs" />
     <Compile Include="Assets\Scripts\Managers\CraftingManager.cs" />
+    <Compile Include="Assets\Scripts\UI\CollectPanel.cs" />
     <Compile Include="Assets\Scripts\Managers\SceneItemsManager.cs" />
     <Compile Include="Assets\Scripts\Player\MovementComponent.cs" />
     <Compile Include="Assets\Scripts\UI\InGameMenu.cs" />

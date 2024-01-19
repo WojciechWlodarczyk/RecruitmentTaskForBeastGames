@@ -362,6 +362,7 @@
 "Assets/Scripts/Player/MainPlayer.cs"
 "Assets/Scripts/Player/MovementComponent.cs"
 "Assets/Scripts/ScriptableObject/CraftingOperation.cs"
+"Assets/Scripts/UI/CollectPanel.cs"
 "Assets/Scripts/UI/CraftingMenu.cs"
 "Assets/Scripts/UI/EquipmentMenu.cs"
 "Assets/Scripts/UI/InGameMenu.cs"

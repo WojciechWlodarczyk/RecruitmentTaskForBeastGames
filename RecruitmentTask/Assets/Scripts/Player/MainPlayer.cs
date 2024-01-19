@@ -64,11 +64,13 @@ public class MainPlayer : MonoBehaviour
     public void AddItemToPickUp(ItemToPickUp type)
     {
         ItemsThatPlayerCanPickUp.Add(type);
+        uiManager.ShowCollectPanel();
     }
 
     public void RemoveItemToPickUp(ItemToPickUp type)
     {
         ItemsThatPlayerCanPickUp.Remove(type);
+        uiManager.HideCollectPanel();
     }
 
     private void ManageItemPickUping()
@@ -81,6 +83,7 @@ public class MainPlayer : MonoBehaviour
             }
 
             ItemsThatPlayerCanPickUp = new HashSet<ItemToPickUp>();
+            uiManager.HideCollectPanel();
         }
     }
 }
